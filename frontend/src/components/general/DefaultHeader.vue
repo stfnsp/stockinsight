@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import SearchBar from '@/components/general/SearchBar.vue'
 </script>
 
 <template>
@@ -8,6 +9,8 @@ import { RouterLink } from 'vue-router'
       <img src="@/assets/png/logo.png" alt="logo" />
       <p>Stockinsight</p>
     </RouterLink>
+    <SearchBar />
+    <RouterLink id="login-link" class="button" :to="{ name: 'home' }">Sign In</RouterLink>
   </header>
 </template>
 
