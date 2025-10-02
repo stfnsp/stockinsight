@@ -5,7 +5,7 @@ import SearchBar from '@/components/general/SearchBar.vue'
 
 <template>
   <header>
-    <RouterLink id="home" class="link" :to="{ name: 'home' }">
+    <RouterLink id="home-link" class="link" :to="{ name: 'home' }">
       <img src="@/assets/png/logo.png" alt="logo" />
       <p>Stockinsight</p>
     </RouterLink>
@@ -31,16 +31,16 @@ header {
 .link {
   text-decoration: none;
 }
-#home {
+#home-link {
   display: flex;
   align-items: center;
 }
 
-#home > img {
+#home-link > img {
   height: 30px;
   margin: 0 20px 0 0;
 }
-#home > p {
+#home-link > p {
   display: none;
   font-size: 20px;
   color: #5f6368;
@@ -57,14 +57,14 @@ header {
   header {
     padding: 0 16px 0 32px;
   }
-  #home {
+  #home-link {
     margin: 0 80px 0 0;
   }
 
-  #home > img {
+  #home-link > img {
     margin: 0 10px 0 0;
   }
-  #home > p {
+  #home-link > p {
     display: block;
   }
   #login-link {
