@@ -12,5 +12,5 @@ services:
         '--global-response-templating',
         '--disable-gzip',
         '--enable-stub-cors',
-        '--verbose'
+        '--verbose',
       ]
