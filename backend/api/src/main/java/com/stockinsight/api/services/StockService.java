@@ -1,6 +1,8 @@
 package com.stockinsight.api.services;
 
+import com.stockinsight.api.dtos.CandlestickDto;
 import com.stockinsight.api.dtos.StockDto;
+import com.stockinsight.api.repositories.CandlestickRepository;
 import com.stockinsight.api.repositories.StockRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +14,14 @@ public class StockService {
   @Autowired
   private StockRepository stockRepository;
 
+  @Autowired
+  private CandlestickRepository candlestickRepository;
+
   public List<StockDto> getStocks() {
     return this.stockRepository.getStocks();
+  }
+
+  public List<CandlestickDto> getCandlesticksForStock(String symbol) {
+    return this.candlestickRepository.getCandlesticksForStock(symbol);
   }
 }
