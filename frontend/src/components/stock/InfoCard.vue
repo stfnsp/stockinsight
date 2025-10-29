@@ -27,7 +27,7 @@ const prices = computed(() => {
 })
 
 const name = computed(() => {
-  return `${stock.value.company_name} (${stock.value.symbol})`
+  return `${stock.value.companyName} (${stock.value.symbol})`
 })
 
 const price = computed(() => {
@@ -45,7 +45,7 @@ const change = computed(() => {
 })
 
 const marketCap = computed(() => {
-  let marketCap = stock.value.market_cap
+  let marketCap = stock.value.marketCap
   const suffixes = ['', 'K', 'M', 'B', 'T']
   let suffixNum = 0
   while (marketCap >= 1000) {
@@ -89,7 +89,7 @@ function subscribe() {
         <div class="section">
           <p>Exchange</p>
           <p>
-            <span>{{ stock.exchange_name }}</span>
+            <span>{{ stock.exchangeName }}</span>
           </p>
         </div>
         <div class="section">

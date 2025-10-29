@@ -8,23 +8,23 @@
     "jsonBody": [
       {
         "symbol": "AAPL",
-        "company_name": "Apple",
-        "exchange_name": "Nasdaq Ngs Global Select Market",
+        "companyName": "Apple Inc.",
+        "exchangeName": "NASDAQ - ALL MARKETS",
         "region": "US",
         "currency": "USD",
-        "market_cap": 2090541573920,
-        "industry": "Tech",
-        "sector": "Manufacturing"
+        "marketCap": 3677003448320,
+        "industry": "Consumer Electronics",
+        "sector": "Technology"
       },
       {
         "symbol": "AMZN",
-        "company_name": "Amazon",
-        "exchange_name": "Nasdaq Ngs Global Select Market",
+        "companyName": "Amazon.com, Inc.",
+        "exchangeName": "NASDAQ - ALL MARKETS",
         "region": "US",
         "currency": "USD",
-        "market_cap": 2090541573920,
-        "industry": "Tech",
-        "sector": "Manufacturing"
+        "marketCap": 2299035123712,
+        "industry": "Internet Retail",
+        "sector": "Consumer Cyclical"
       }
     ],
     "headers": {

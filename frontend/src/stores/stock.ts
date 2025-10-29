@@ -8,7 +8,7 @@ export const useStockStore = defineStore('stock', () => {
   const searchList = computed(() =>
     stocks.value.map((stock) => ({
       symbol: stock.symbol,
-      text: `${stock.company_name} (${stock.symbol})`,
+      text: `${stock.companyName} (${stock.symbol})`,
     })),
   )
 
