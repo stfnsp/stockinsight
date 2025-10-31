@@ -1,7 +1,6 @@
 services:
   wiremock:
     image: 'wiremock/wiremock:3x'
-    container_name: wiremock
     ports:
       - 3000:8080
     volumes:

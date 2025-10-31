@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/api/v1/stocks"
+    "urlPathPattern": "/api/stocks"
   },
   "response": {
     "status": 200,
